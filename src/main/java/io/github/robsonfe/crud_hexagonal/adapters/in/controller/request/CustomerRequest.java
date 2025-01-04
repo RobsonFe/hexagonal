@@ -14,4 +14,10 @@ public class CustomerRequest {
 
     @NotBlank
     private String zipCode;
+
+    //Estava gerando erro de compilação mesmo com o lambok sendo usado, só resolveu fazendo o processo maunualmente.
+    public String getZipCode() {
+        return zipCode;
+    }
+
 }
